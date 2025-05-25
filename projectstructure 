@@ -1,0 +1,16 @@
+my-website/
+├── index.html
+├── style.css               <-- Your main stylesheet
+├── script.js               <-- (Optional: Add your custom JS here)
+├── assets/                 <-- Folder for static files (icons, images, fonts, etc.)
+│   └── logose.avif
+├── images/                 <-- (Optional: additional images)
+├── lib/                    <-- All third-party CSS and JS libraries
+│   ├── aos.css
+│   ├── aos.js
+│   ├── bootstrap.css
+│   ├── font-awesome.min.css
+│   ├── jquery.js
+│   ├── jquery.color.js
+│   └── randomColor.js
+├── README.md               <-- (Optional: project documentation)
