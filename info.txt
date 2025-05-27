@@ -1,0 +1,42 @@
+Title: Introduction to Process Scheduling in Operating Systems
+Process scheduling is a fundamental component of an operating system (OS). It refers to the method by which the OS selects the next process from the ready queue for execution. Efficient scheduling ensures maximum CPU utilization, minimizes waiting time, and enhances overall system performance.
+Objectives of Process Scheduling:
+Maximize CPU utilization.
+Minimize process waiting time and turnaround time.
+Ensure fairness among all processes.
+Support a variety of process types including batch, interactive, and real-time.
+Key Process Scheduling Algorithms:
+First-Come, First-Served (FCFS):
+The simplest scheduling algorithm.
+Processes are scheduled in the order they arrive in the ready queue.
+Non-preemptive: Once a process starts executing, it runs to completion.
+Advantages:
+Easy to implement.
+Fair in terms of arrival time.
+Disadvantages:
+Can lead to long average waiting times (convoy effect).
+Poor performance in time-sharing systems.
+Shortest Job First (SJF):
+Selects the process with the shortest CPU burst time.
+Can be preemptive (Shortest Remaining Time First) or non-preemptive.
+Provides optimal average waiting time for a given set of processes.
+Not suitable when burst times are unknown in advance.
+Round Robin (RR):
+Each process is given a fixed time quantum.
+After the time slice, the CPU is passed to the next process in the queue.
+Preemptive and well-suited for time-sharing environments.
+Priority Scheduling:
+Each process is assigned a priority level.
+The scheduler selects the process with the highest priority.
+Can be preemptive or non-preemptive.
+Starvation may occur for lower-priority processes unless aging is implemented.
+Queue Concepts in Scheduling:
+Ready Queue: Contains all processes that are ready to run and waiting for CPU allocation.
+Waiting Queue: Holds processes waiting for an I/O operation or resource.
+Priority Queue: Maintains processes according to their priority values for scheduling decisions.
+Real-World Applications:
+Parking Systems: Implement First-Come, First-Served (FCFS) and priority-based queues to manage space allocation.
+Job Schedulers: Use various scheduling policies to determine the order of task execution.
+Embedded and Real-Time Systems: Often employ priority or deadline-based scheduling to meet timing constraints.
+Conclusion:
+Process scheduling is a vital OS-level function that directly impacts system responsiveness and throughput. A thorough understanding of various scheduling strategies enables developers and engineers to create systems that balance fairness, performance, and real-time requirements.
